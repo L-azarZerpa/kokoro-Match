@@ -496,7 +496,7 @@ export default function GameDetailScreen({ game, onBack }) {
                                 • {item.info.lowHint}
                               </Text>
                               <Text className="mt-2 text-[11px] leading-4 text-violet-300">
-                                ¿Qué significan los números? "Suma" es el total acumulado en esos {item.count} ítems (tras invertir los ítems inversos) y el número grande ({item.average}) es la media provisional en escala 1–5 ({item.sum} ÷ {item.count}), resumida como "{item.levelCode}".
+                                ¿Qué significan los números? &ldquo;Suma&rdquo; es el total acumulado en esos {item.count} ítems (tras invertir los ítems inversos) y el número grande ({item.average}) es la media provisional en escala 1–5 ({item.sum} ÷ {item.count}), resumida como &ldquo;{item.levelCode}&rdquo;.
                               </Text>
                             </View>
                           )}
