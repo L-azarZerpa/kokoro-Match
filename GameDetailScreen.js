@@ -1,8 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo, useState } from 'react';
-import { Pressable, ScrollView, Text, View } from 'react-native';
-import { collection, getDocs } from 'firebase/firestore';
-import { db } from './firebase';
+import { Image, Pressable, ScrollView, Text, View } from 'react-native';
+import {
+  addDoc,
+  collection,
+  doc,
+  getDocs,
+  serverTimestamp,
+  setDoc,
+} from 'firebase/firestore';
+import { auth, db } from './firebase';
+import AccountActions from './AccountActions';
 
 const SCALE_OPTIONS = [
   { value: 1, label: 'Muy en\ndesacuerdo', border: 'border-rose-400', bgActive: 'bg-rose-400', bgIdle: 'bg-rose-400/10' },
@@ -167,7 +175,17 @@ function calculateTestResults(questions, answers) {
   return { bigFive, mbti, oceanSummary, mbtiSummary };
 }
 
-export default function GameDetailScreen({ game, onBack }) {
+export default function GameDetailScreen({
+  authActionError = null,
+  game,
+  isAuthenticated = false,
+  isSigningOut = false,
+  onBack,
+  onRegister,
+  onSignIn,
+  onSignOut,
+  userEmail,
+}) {
   const [questions, setQuestions] = useState([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
   const [questionsError, setQuestionsError] = useState(null);
@@ -175,6 +193,8 @@ export default function GameDetailScreen({ game, onBack }) {
   const [currentPage, setCurrentPage] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [selectedInfoKey, setSelectedInfoKey] = useState(null);
+  const [isSavingResult, setIsSavingResult] = useState(false);
+  const [saveFeedback, setSaveFeedback] = useState(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -185,6 +205,7 @@ export default function GameDetailScreen({ game, onBack }) {
       setCurrentPage(0);
       setIsSubmitted(false);
       setSelectedInfoKey(null);
+      setSaveFeedback(null);
       setIsLoadingQuestions(true);
       setQuestionsError(null);
 
@@ -247,6 +268,7 @@ export default function GameDetailScreen({ game, onBack }) {
   };
 
   const handleSelectOption = (questionId, value) => {
+    setSaveFeedback(null);
     setAnswers((prev) => ({
       ...prev,
       [questionId]: value,
@@ -255,6 +277,7 @@ export default function GameDetailScreen({ game, onBack }) {
 
   const handleQuickFillAndSubmit = () => {
     if (!questions.length) return;
+    setSaveFeedback(null);
     const generatedAnswers = {};
     questions.forEach((question) => {
       generatedAnswers[question.id] = Math.floor(Math.random() * 5) + 1;
@@ -278,21 +301,118 @@ export default function GameDetailScreen({ game, onBack }) {
     }
   };
 
+  const handleSaveResults = async () => {
+    if (!results) return;
+
+    const currentUser = auth.currentUser;
+    if (!currentUser || !isAuthenticated) {
+      if (onSignIn) {
+        onSignIn();
+      } else {
+        setSaveFeedback({
+          type: 'error',
+          text: 'Debes iniciar sesión primero para guardar tus resultados.',
+        });
+      }
+      return;
+    }
+
+    setIsSavingResult(true);
+    setSaveFeedback(null);
+
+    try {
+      const detailedResponses = questions.map((q) => ({
+        questionId: q.id,
+        order: q.order ?? null,
+        text: q.text ?? '',
+        system: q.system ?? '',
+        trait: q.trait ?? null,
+        pole: q.pole ?? null,
+        direction: q.direction ?? null,
+        answer: answers[q.id] ?? null,
+      }));
+
+      await addDoc(collection(db, 'users', currentUser.uid, 'test_attempts'), {
+        gameId: game.id,
+        gameTitle: game.title || 'Test Psicológico',
+        oceanSummary: results.oceanSummary,
+        mbtiSummary: results.mbtiSummary,
+        bigFive: results.bigFive,
+        mbti: results.mbti,
+        detailedResponses,
+        createdAt: serverTimestamp(),
+      });
+
+      await setDoc(
+        doc(db, 'users', currentUser.uid),
+        {
+          latestResult: {
+            gameId: game.id,
+            oceanSummary: results.oceanSummary,
+            mbtiSummary: results.mbtiSummary,
+            updatedAt: serverTimestamp(),
+          },
+        },
+        { merge: true }
+      );
+
+      setSaveFeedback({
+        type: 'success',
+        text: '¡Resultados y respuestas guardados en tu perfil!',
+      });
+    } catch (error) {
+      console.error('Error al guardar resultados en Firestore:', error);
+      setSaveFeedback({
+        type: 'error',
+        text: 'No se pudieron guardar los resultados. Intenta de nuevo.',
+      });
+    } finally {
+      setIsSavingResult(false);
+    }
+  };
+
   return (
     <View className="flex-1 bg-[#0c0d13]">
       <StatusBar style="light" />
 
-      <View className="z-10 h-16 flex-row items-center justify-between border-b border-[#262730] bg-[#17181f] px-4">
-        <Pressable
-          onPress={onBack}
-          accessibilityLabel="Volver al inicio"
-          accessibilityRole="button"
-          className="h-10 w-10 items-center justify-center rounded-full bg-[#22232d]"
-        >
-          <Text className="text-xl font-bold text-white">←</Text>
-        </Pressable>
+      <View className="z-10 border-b border-[#262730] bg-[#17181f] px-3 py-2">
+        <View className="h-10 flex-row items-center">
+          <Pressable
+            onPress={onBack}
+            accessibilityLabel="Volver al inicio"
+            accessibilityRole="button"
+            className="h-10 w-9 items-center justify-center rounded-full bg-[#22232d]"
+          >
+            <Text className="text-xl font-bold text-white">←</Text>
+          </Pressable>
 
-        <View className="items-center">
+          <View className="ml-2 flex-row items-center">
+            <Image
+              accessibilityLabel="Icono de Kokoro Match"
+              className="mr-1"
+              resizeMode="contain"
+              source={require('./assets/icon.png')}
+              style={{ height: 16, width: 16 }}
+            />
+            <View>
+              <Text className="text-xs font-black leading-3 text-white">kokoro</Text>
+              <Text className="text-xs font-black leading-3 text-white">Match</Text>
+            </View>
+          </View>
+
+          <View className="ml-auto">
+            <AccountActions
+              isAuthenticated={isAuthenticated}
+              isSigningOut={isSigningOut}
+              onRegister={onRegister}
+              onSignIn={onSignIn}
+              onSignOut={onSignOut}
+              userEmail={userEmail}
+            />
+          </View>
+        </View>
+
+        <View className="mt-1 items-center">
           <Text className="text-base font-black text-white" numberOfLines={1}>
             {game?.title || 'Test Psicológico'}
           </Text>
@@ -304,9 +424,12 @@ export default function GameDetailScreen({ game, onBack }) {
                 : 'Sin preguntas'}
           </Text>
         </View>
-
-        <View className="w-10" />
       </View>
+      {authActionError ? (
+        <Text accessibilityRole="alert" className="bg-[#17181f] px-3 py-2 text-center text-xs font-semibold text-rose-400">
+          {authActionError}
+        </Text>
+      ) : null}
 
       <View className="h-1.5 w-full bg-[#20212a]">
         <View
@@ -490,10 +613,10 @@ export default function GameDetailScreen({ game, onBack }) {
                                 {item.info.summary}
                               </Text>
                               <Text className="mt-2 text-xs leading-4 text-[#9ea0b3]">
-                                • {item.info.highHint}
+- {item.info.highHint}
                               </Text>
                               <Text className="mt-1 text-xs leading-4 text-[#9ea0b3]">
-                                • {item.info.lowHint}
+- {item.info.lowHint}
                               </Text>
                               <Text className="mt-2 text-[11px] leading-4 text-violet-300">
                                 ¿Qué significan los números? &ldquo;Suma&rdquo; es el total acumulado en esos {item.count} ítems (tras invertir los ítems inversos) y el número grande ({item.average}) es la media provisional en escala 1–5 ({item.sum} ÷ {item.count}), resumida como &ldquo;{item.levelCode}&rdquo;.
@@ -557,6 +680,44 @@ export default function GameDetailScreen({ game, onBack }) {
                         </Pressable>
                       );
                     })}
+                  </View>
+
+                  {/* Guardar resultados en el perfil del usuario */}
+                  <View className="mt-6 border-t border-[#262730] pt-5">
+                    <Pressable
+                      disabled={isSavingResult || saveFeedback?.type === 'success'}
+                      onPress={handleSaveResults}
+                      accessibilityRole="button"
+                      className={`items-center rounded-full py-3.5 ${
+                        saveFeedback?.type === 'success'
+                          ? 'bg-[#262730]'
+                          : 'bg-lime-300'
+                      }`}
+                    >
+                      <Text
+                        className={`text-sm font-black ${
+                          saveFeedback?.type === 'success' ? 'text-lime-300' : 'text-[#11120f]'
+                        }`}
+                      >
+                        {isSavingResult
+                          ? 'Guardando...'
+                          : saveFeedback?.type === 'success'
+                            ? '✓ Guardado en tu perfil'
+                            : isAuthenticated
+                              ? 'Guardar resultados en mi perfil'
+                              : 'Inicia sesión para guardar resultados'}
+                      </Text>
+                    </Pressable>
+
+                    {saveFeedback && (
+                      <Text
+                        className={`mt-3 text-center text-xs font-semibold ${
+                          saveFeedback.type === 'success' ? 'text-lime-300' : 'text-rose-400'
+                        }`}
+                      >
+                        {saveFeedback.text}
+                      </Text>
+                    )}
                   </View>
                 </View>
               )}

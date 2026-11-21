@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useMemo, useState } from 'react';
 import { Image, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import AccountActions from './AccountActions';
 
 const DESKTOP_NAV = [
   { id: 'home', icon: '⌂', label: 'Inicio', active: true },
@@ -42,7 +43,14 @@ export default function HomeScreen({
   featuredGames = [],
   isLoading = false,
   error = null,
+  authActionError = null,
+  isAuthenticated = false,
+  isSigningOut = false,
   onSelectGame, // <--- Nueva función para manejar el clic
+  onRegister,
+  onSignIn,
+  onSignOut,
+  userEmail,
 }) {
   const [search, setSearch] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -100,13 +108,20 @@ export default function HomeScreen({
           <Text className="text-xl text-[#c2c3d0]">⌕</Text>
         </View>
 
-        <Pressable accessibilityLabel="Iniciar sesión" accessibilityRole="button" className="ml-2 rounded-full bg-lime-300 px-3 py-2 md:ml-3 md:px-4">
-          <Text className="text-xs font-extrabold text-[#11120f]">Iniciar sesión</Text>
-        </Pressable>
-        <Pressable accessibilityLabel="Registrarse" accessibilityRole="button" className="ml-2 rounded-full bg-lime-300 px-3 py-2 md:px-4">
-          <Text className="text-xs font-extrabold text-[#11120f]">Registrarse</Text>
-        </Pressable>
+        <AccountActions
+          isAuthenticated={isAuthenticated}
+          isSigningOut={isSigningOut}
+          onRegister={onRegister}
+          onSignIn={onSignIn}
+          onSignOut={onSignOut}
+          userEmail={userEmail}
+        />
       </View>
+      {authActionError ? (
+        <Text accessibilityRole="alert" className="bg-[#17181f] px-3 py-2 text-center text-xs font-semibold text-rose-400">
+          {authActionError}
+        </Text>
+      ) : null}
 
       <View className="flex-1 flex-row">
         {isSidebarOpen && (
