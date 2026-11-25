@@ -88,10 +88,28 @@ export const SCL_DIMENSION_LABELS: Record<SclDimension, string> = {
   PSIC: 'Psicoticismo',
 };
 
+export const SCL_DIMENSION_DESCRIPTIONS: Record<SclDimension, string> = {
+  SOM: 'Malestar físico percibido (como molestias corporales, tensión o cansancio) que suele asociarse al estrés o a la carga emocional más que a una causa física confirmada.',
+  OBS: 'Pensamientos recurrentes o difíciles de soltar, junto con la necesidad de repetir revisados, rutinas o comprobaciones para sentir control.',
+  SI: 'Inseguridad, incomodidad o tendencia a sentirse juzgado o inferior al compararse con otras personas en el trato cotidiano.',
+  DEP: 'Desánimo, falta de energía, pérdida de interés o sensación de pesadez y tristeza sostenida frente al día a día.',
+  ANS: 'Estado de alerta, nerviosismo, inquietud o tensión ante lo que pueda pasar.',
+  HOS: 'Irritabilidad, impaciencia, ganas de discutir o frustración contenida frente a los demás.',
+  FOB: 'Miedo o evitación ante situaciones, lugares o espacios concretos que generan sensación de amenaza o agobio.',
+  PAR: 'Tendencia a desconfiar, sentir que otros tienen segundas intenciones o percibir hostilidad en el entorno.',
+  PSIC: 'Sensación de distanciamiento o aislamiento respecto a los demás, junto con vivencias internas o formas de pensar poco habituales.',
+};
+
 export const DARK_TRIAD_TRAIT_LABELS: Record<DarkTriadTrait, string> = {
   psicopatia: 'Psicopatía',
   narcisismo: 'Narcisismo',
   maquiavelismo: 'Maquiavelismo',
+};
+
+export const DARK_TRIAD_TRAIT_DESCRIPTIONS: Record<DarkTriadTrait, string> = {
+  psicopatia: 'Menor respuesta emocional ante el malestar ajeno, impulsividad o búsqueda de estímulos sin detenerse mucho en las consecuencias.',
+  narcisismo: 'Tendencia a buscar admiración, validación o un lugar especial, con alta autoimagen o sensibilidad a no recibir el trato esperado.',
+  maquiavelismo: 'Enfoque más estratégico, calculador o pragmático en las relaciones, priorizando objetivos o conveniencia sobre lo emocional.',
 };
 
 export function isSclDimension(dimension: string): dimension is SclDimension {

@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import {
   DARK_TRIAD_TRAITS,
+  DARK_TRIAD_TRAIT_DESCRIPTIONS,
   DARK_TRIAD_TRAIT_LABELS,
   SCL_DIMENSIONS,
+  SCL_DIMENSION_DESCRIPTIONS,
   SCL_DIMENSION_LABELS,
   type DevilmanTestResults,
   type HumanityVerdict,
@@ -32,11 +35,16 @@ export default function DevilmanResultsView({
   onSaveResults,
   onReviewTest,
 }: DevilmanResultsViewProps) {
+  const [selectedInfoKey, setSelectedInfoKey] = useState<string | null>(null);
   const susceptibilityLabels = {
     low: 'Baja',
     moderate: 'Moderada',
     high: 'Alta',
   } as const;
+
+  const toggleInfo = (key: string) => {
+    setSelectedInfoKey((previous) => (previous === key ? null : key));
+  };
 
   return (
     <View className="mt-2 w-full rounded-3xl border border-violet-400/40 bg-[#17181f] p-6">
@@ -83,23 +91,37 @@ export default function DevilmanResultsView({
         <Text className="mb-3 text-sm font-extrabold text-white">SCL-90-R · Dimensiones</Text>
         {SCL_DIMENSIONS.map((dimension) => {
           const score = devilmanResults.scl90.dimensions[dimension];
+          const infoKey = `scl-${dimension}`;
+          const isExpanded = selectedInfoKey === infoKey;
 
           return (
             <View
               key={dimension}
               className="mb-2 rounded-xl border border-[#262730] bg-[#111218] px-4 py-3"
             >
-              <View className="flex-row items-center justify-between">
-                <Text className="flex-1 pr-3 text-xs font-bold text-white">
-                  {SCL_DIMENSION_LABELS[dimension]} ({dimension})
-                </Text>
+              <Pressable
+                onPress={() => toggleInfo(infoKey)}
+                accessibilityRole="button"
+                accessibilityState={{ expanded: isExpanded }}
+                className="flex-row items-center justify-between"
+              >
+                <View className="flex-1 pr-3">
+                  <Text className="text-xs font-bold text-white">
+                    {SCL_DIMENSION_LABELS[dimension]} ({dimension}) {isExpanded ? '▴' : '▾'}
+                  </Text>
+                  <Text className="mt-1 text-[11px] text-[#9ea0b3]">
+                    Suma: {score.sum} · Ítems: {score.count} · Normalizado: {score.normalized.toFixed(2)}
+                  </Text>
+                </View>
                 <Text className="text-sm font-black text-lime-300">
                   {score.rawScore.toFixed(2)} / 4
                 </Text>
-              </View>
-              <Text className="mt-1 text-[11px] text-[#9ea0b3]">
-                Suma: {score.sum} · Ítems: {score.count} · Normalizado: {score.normalized.toFixed(2)}
-              </Text>
+              </Pressable>
+              {isExpanded ? (
+                <Text className="mt-3 border-t border-[#262730] pt-3 text-xs leading-4 text-[#d7d7e2]">
+                  {SCL_DIMENSION_DESCRIPTIONS[dimension]}
+                </Text>
+              ) : null}
             </View>
           );
         })}
@@ -119,23 +141,37 @@ export default function DevilmanResultsView({
         <Text className="mb-3 text-sm font-extrabold text-white">Tríada Oscura · Rasgos</Text>
         {DARK_TRIAD_TRAITS.map((trait) => {
           const score = devilmanResults.darkTriad.traits[trait];
+          const infoKey = `dark-triad-${trait}`;
+          const isExpanded = selectedInfoKey === infoKey;
 
           return (
             <View
               key={trait}
               className="mb-2 rounded-xl border border-[#262730] bg-[#111218] px-4 py-3"
             >
-              <View className="flex-row items-center justify-between">
-                <Text className="text-sm font-bold text-white">
-                  {DARK_TRIAD_TRAIT_LABELS[trait]}
-                </Text>
+              <Pressable
+                onPress={() => toggleInfo(infoKey)}
+                accessibilityRole="button"
+                accessibilityState={{ expanded: isExpanded }}
+                className="flex-row items-center justify-between"
+              >
+                <View className="flex-1 pr-3">
+                  <Text className="text-sm font-bold text-white">
+                    {DARK_TRIAD_TRAIT_LABELS[trait]} {isExpanded ? '▴' : '▾'}
+                  </Text>
+                  <Text className="mt-1 text-[11px] text-[#9ea0b3]">
+                    Suma: {score.sum} · Ítems: {score.count} · Normalizado: {score.normalized.toFixed(2)}
+                  </Text>
+                </View>
                 <Text className="text-sm font-black text-violet-300">
                   {score.average.toFixed(2)} / 4
                 </Text>
-              </View>
-              <Text className="mt-1 text-[11px] text-[#9ea0b3]">
-                Suma: {score.sum} · Ítems: {score.count} · Normalizado: {score.normalized.toFixed(2)}
-              </Text>
+              </Pressable>
+              {isExpanded ? (
+                <Text className="mt-3 border-t border-[#262730] pt-3 text-xs leading-4 text-[#d7d7e2]">
+                  {DARK_TRIAD_TRAIT_DESCRIPTIONS[trait]}
+                </Text>
+              ) : null}
             </View>
           );
         })}
