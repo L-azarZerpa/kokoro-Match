@@ -1,0 +1,722 @@
+[
+  {
+    "id": "q_001",
+    "system": "scl_90_r",
+    "order": 1,
+    "text": "Dolores de cabeza.",
+    "dimension": "SOM",
+    "direction": "direct"
+  },
+  {
+    "id": "q_002",
+    "system": "scl_90_r",
+    "dimension": "ANS",
+    "order": 2,
+    "direction": "direct",
+    "text": "Nerviosismo."
+  },
+  {
+    "id": "q_003",
+    "order": 3,
+    "dimension": "OBS",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Pensamientos desagradables que no se iban de mi cabeza."
+  },
+  {
+    "id": "q_004",
+    "text": "Sensación de mareo o desmayo.",
+    "direction": "direct",
+    "dimension": "SOM",
+    "order": 4,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_005",
+    "text": "Falta de interés en relaciones sexuales.",
+    "system": "scl_90_r",
+    "order": 5,
+    "dimension": "DEP",
+    "direction": "direct"
+  },
+  {
+    "id": "q_006",
+    "dimension": "SI",
+    "text": "Criticar a los demás.",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 6
+  },
+  {
+    "id": "q_007",
+    "dimension": "PSIC",
+    "direction": "direct",
+    "order": 7,
+    "system": "scl_90_r",
+    "text": "Sentir que otro puede controlar mis pensamientos."
+  },
+  {
+    "id": "q_008",
+    "text": "Sentir que otros son culpables de lo que me pasa.",
+    "system": "scl_90_r",
+    "dimension": "PAR",
+    "direction": "direct",
+    "order": 8
+  },
+  {
+    "id": "q_009",
+    "system": "scl_90_r",
+    "order": 9,
+    "text": "Tener dificultad para memorizar cosas.",
+    "dimension": "OBS",
+    "direction": "direct"
+  },
+  {
+    "id": "q_010",
+    "order": 10,
+    "dimension": "OBS",
+    "system": "scl_90_r",
+    "text": "Estar preocupado/a por mi falta de ganas para hacer algo.",
+    "direction": "direct"
+  },
+  {
+    "id": "q_011",
+    "order": 11,
+    "system": "scl_90_r",
+    "dimension": "HOS",
+    "direction": "direct",
+    "text": "Sentirme enojado/a, malhumorado/a."
+  },
+  {
+    "id": "q_012",
+    "order": 12,
+    "dimension": "SOM",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Dolores en el pecho."
+  },
+  {
+    "id": "q_013",
+    "order": 13,
+    "dimension": "FOB",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Miedo a los espacios abiertos o las calles."
+  },
+  {
+    "id": "q_014",
+    "order": 14,
+    "dimension": "DEP",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Sentirme con muy pocas energías."
+  },
+  {
+    "id": "q_015",
+    "direction": "direct",
+    "dimension": "DEP",
+    "system": "scl_90_r",
+    "order": 15,
+    "text": "Pensar en quitarme la vida."
+  },
+  {
+    "id": "q_016",
+    "text": "Escuchar voces que otras personas no oyen.",
+    "system": "scl_90_r",
+    "order": 16,
+    "direction": "direct",
+    "dimension": "PSIC"
+  },
+  {
+    "id": "q_017",
+    "text": "Temblores en mi cuerpo.",
+    "system": "scl_90_r",
+    "direction": "direct",
+    "dimension": "ANS",
+    "order": 17
+  },
+  {
+    "id": "q_018",
+    "text": "Perder la confianza en la mayoría de las personas.",
+    "system": "scl_90_r",
+    "order": 18,
+    "dimension": "PAR",
+    "direction": "direct"
+  },
+  {
+    "id": "q_019",
+    "text": "No tener ganas de comer.",
+    "order": 19,
+    "direction": "direct",
+    "system": "scl_90_r",
+    "dimension": "ADDITIONAL"
+  },
+  {
+    "id": "q_020",
+    "order": 20,
+    "direction": "direct",
+    "dimension": "DEP",
+    "system": "scl_90_r",
+    "text": "Llorar por cualquier cosa."
+  },
+  {
+    "id": "q_021",
+    "direction": "direct",
+    "dimension": "SI",
+    "system": "scl_90_r",
+    "text": "Sentirme incómodo/a con personas del otro sexo.",
+    "order": 21
+  },
+  {
+    "id": "q_022",
+    "dimension": "DEP",
+    "order": 22,
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Sentirme atrapada/o o encerrado/a."
+  },
+  {
+    "id": "q_023",
+    "direction": "direct",
+    "dimension": "ANS",
+    "order": 23,
+    "text": "Asustarme de repente sin razón alguna.",
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_024",
+    "system": "scl_90_r",
+    "order": 24,
+    "dimension": "HOS",
+    "direction": "direct",
+    "text": "Explotar y no poder controlarme."
+  },
+  {
+    "id": "q_025",
+    "direction": "direct",
+    "order": 25,
+    "dimension": "FOB",
+    "system": "scl_90_r",
+    "text": "Tener miedo a salir solo/a de mi casa."
+  },
+  {
+    "id": "q_026",
+    "system": "scl_90_r",
+    "dimension": "DEP",
+    "direction": "direct",
+    "text": "Sentirme culpable por cosas que ocurren.",
+    "order": 26
+  },
+  {
+    "id": "q_027",
+    "text": "Dolores en la espalda.",
+    "direction": "direct",
+    "dimension": "SOM",
+    "order": 27,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_028",
+    "text": "No poder terminar las cosas que empecé a hacer.",
+    "order": 28,
+    "system": "scl_90_r",
+    "dimension": "OBS",
+    "direction": "direct"
+  },
+  {
+    "id": "q_029",
+    "text": "Sentirme solo/a.",
+    "direction": "direct",
+    "dimension": "DEP",
+    "system": "scl_90_r",
+    "order": 29
+  },
+  {
+    "id": "q_030",
+    "system": "scl_90_r",
+    "order": 30,
+    "text": "Sentirme triste.",
+    "dimension": "DEP",
+    "direction": "direct"
+  },
+  {
+    "id": "q_031",
+    "dimension": "DEP",
+    "order": 31,
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Preocuparme demasiado por todo lo que pasa."
+  },
+  {
+    "id": "q_032",
+    "system": "scl_90_r",
+    "order": 32,
+    "text": "No tener interés por nada.",
+    "direction": "direct",
+    "dimension": "DEP"
+  },
+  {
+    "id": "q_033",
+    "order": 33,
+    "direction": "direct",
+    "dimension": "ANS",
+    "system": "scl_90_r",
+    "text": "Tener miedos."
+  },
+  {
+    "id": "q_034",
+    "system": "scl_90_r",
+    "order": 34,
+    "dimension": "SI",
+    "direction": "direct",
+    "text": "Sentirme herido en mis sentimientos."
+  },
+  {
+    "id": "q_035",
+    "order": 35,
+    "text": "Creer que la gente sabe qué estoy pensando.",
+    "dimension": "PSIC",
+    "system": "scl_90_r",
+    "direction": "direct"
+  },
+  {
+    "id": "q_036",
+    "system": "scl_90_r",
+    "order": 36,
+    "text": "Sentir que no me comprenden.",
+    "direction": "direct",
+    "dimension": "SI"
+  },
+  {
+    "id": "q_037",
+    "order": 37,
+    "system": "scl_90_r",
+    "text": "Sentir que no caigo bien a la gente, que no les gusto.",
+    "direction": "direct",
+    "dimension": "SI"
+  },
+  {
+    "id": "q_038",
+    "order": 38,
+    "system": "scl_90_r",
+    "direction": "direct",
+    "dimension": "OBS",
+    "text": "Tener que hacer las cosas muy despacio para estar seguro/a de que están bien hechas."
+  },
+  {
+    "id": "q_039",
+    "system": "scl_90_r",
+    "order": 39,
+    "text": "Mi corazón late muy fuerte, se acelera.",
+    "dimension": "ANS",
+    "direction": "direct"
+  },
+  {
+    "id": "q_040",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "dimension": "SOM",
+    "order": 40,
+    "text": "Náuseas o dolor de estómago."
+  },
+  {
+    "id": "q_041",
+    "text": "Sentirme inferior a los demás.",
+    "order": 41,
+    "system": "scl_90_r",
+    "direction": "direct",
+    "dimension": "SI"
+  },
+  {
+    "id": "q_042",
+    "direction": "direct",
+    "dimension": "SOM",
+    "text": "Calambres en manos, brazos o piernas.",
+    "system": "scl_90_r",
+    "order": 42
+  },
+  {
+    "id": "q_043",
+    "dimension": "PAR",
+    "direction": "direct",
+    "text": "Sentir que me vigilan o que hablan de mí.",
+    "order": 43,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_044",
+    "text": "Tener problemas para dormirme.",
+    "system": "scl_90_r",
+    "direction": "direct",
+    "order": 44,
+    "dimension": "ADDITIONAL"
+  },
+  {
+    "id": "q_045",
+    "dimension": "OBS",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 45,
+    "text": "Tener que controlar una o más veces lo que hago."
+  },
+  {
+    "id": "q_046",
+    "text": "Tener dificultades para tomar decisiones.",
+    "dimension": "OBS",
+    "direction": "direct",
+    "order": 46,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_047",
+    "order": 47,
+    "dimension": "FOB",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Tener miedo de viajar en tren, ómnibus o subterráneos."
+  },
+  {
+    "id": "q_048",
+    "order": 48,
+    "dimension": "SOM",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Tener dificultades para respirar bien."
+  },
+  {
+    "id": "q_049",
+    "text": "Ataques de frío o de calor.",
+    "order": 49,
+    "system": "scl_90_r",
+    "dimension": "SOM",
+    "direction": "direct"
+  },
+  {
+    "id": "q_050",
+    "direction": "direct",
+    "dimension": "FOB",
+    "system": "scl_90_r",
+    "order": 50,
+    "text": "Tener que evitar acercarme a algunos lugares o actividades porque me dan miedo."
+  },
+  {
+    "id": "q_051",
+    "system": "scl_90_r",
+    "order": 51,
+    "dimension": "OBS",
+    "direction": "direct",
+    "text": "Sentir que mi mente queda en blanco."
+  },
+  {
+    "id": "q_052",
+    "text": "Hormigueos en alguna parte del cuerpo.",
+    "system": "scl_90_r",
+    "order": 52,
+    "dimension": "SOM",
+    "direction": "direct"
+  },
+  {
+    "id": "q_053",
+    "system": "scl_90_r",
+    "order": 53,
+    "text": "Tener un nudo en la garganta.",
+    "dimension": "SOM",
+    "direction": "direct"
+  },
+  {
+    "id": "q_054",
+    "text": "Perder las esperanzas en el futuro.",
+    "system": "scl_90_r",
+    "dimension": "DEP",
+    "order": 54,
+    "direction": "direct"
+  },
+  {
+    "id": "q_055",
+    "dimension": "OBS",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 55,
+    "text": "Dificultades para concentrarme en lo que estoy haciendo."
+  },
+  {
+    "id": "q_056",
+    "system": "scl_90_r",
+    "direction": "direct",
+    "dimension": "SOM",
+    "order": 56,
+    "text": "Sentir flojedad, debilidad, en partes de mi cuerpo."
+  },
+  {
+    "id": "q_057",
+    "system": "scl_90_r",
+    "text": "Sentirme muy nervioso/a, agitado/a.",
+    "direction": "direct",
+    "dimension": "ANS",
+    "order": 57
+  },
+  {
+    "id": "q_058",
+    "dimension": "SOM",
+    "text": "Sentir mis brazos y piernas muy pesados.",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 58
+  },
+  {
+    "id": "q_059",
+    "order": 59,
+    "system": "scl_90_r",
+    "text": "Pensar que me estoy por morir.",
+    "dimension": "ADDITIONAL",
+    "direction": "direct"
+  },
+  {
+    "id": "q_060",
+    "dimension": "ADDITIONAL",
+    "direction": "direct",
+    "text": "Comer demasiado.",
+    "order": 60,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_061",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 61,
+    "dimension": "SI",
+    "text": "Sentirme incómodo/a cuando me miran o hablan de mí."
+  },
+  {
+    "id": "q_062",
+    "system": "scl_90_r",
+    "order": 62,
+    "text": "Tener ideas, pensamientos que no son los míos.",
+    "direction": "direct",
+    "dimension": "PSIC"
+  },
+  {
+    "id": "q_063",
+    "direction": "direct",
+    "dimension": "HOS",
+    "text": "Necesitar golpear o lastimar a alguien.",
+    "order": 63,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_064",
+    "text": "Despertarme muy temprano por la mañana sin necesidad.",
+    "direction": "direct",
+    "dimension": "ADDITIONAL",
+    "order": 64,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_065",
+    "order": 65,
+    "text": "Repetir muchas veces algo que hago: contar, lavarme, tocar cosas.",
+    "system": "scl_90_r",
+    "dimension": "OBS",
+    "direction": "direct"
+  },
+  {
+    "id": "q_066",
+    "text": "Dormir con problemas, muy inquieto/a.",
+    "order": 66,
+    "direction": "direct",
+    "dimension": "ADDITIONAL",
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_067",
+    "order": 67,
+    "text": "Necesitar romper o destrozar cosas.",
+    "system": "scl_90_r",
+    "dimension": "HOS",
+    "direction": "direct"
+  },
+  {
+    "id": "q_068",
+    "direction": "direct",
+    "dimension": "PAR",
+    "system": "scl_90_r",
+    "order": 68,
+    "text": "Tener ideas, pensamientos que los demás no entienden."
+  },
+  {
+    "id": "q_069",
+    "text": "Estar muy pendiente de lo que los demás puedan pensar de mí.",
+    "system": "scl_90_r",
+    "dimension": "SI",
+    "direction": "direct",
+    "order": 69
+  },
+  {
+    "id": "q_070",
+    "dimension": "FOB",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 70,
+    "text": "Sentirme incómodo/a en lugares donde hay mucha gente."
+  },
+  {
+    "id": "q_071",
+    "text": "Sentir que todo me cuesta mucho esfuerzo.",
+    "dimension": "DEP",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 71
+  },
+  {
+    "id": "q_072",
+    "dimension": "ANS",
+    "text": "Tener ataques de mucho miedo o de pánico.",
+    "direction": "direct",
+    "order": 72,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_073",
+    "dimension": "SI",
+    "system": "scl_90_r",
+    "direction": "direct",
+    "order": 73,
+    "text": "Sentirme mal si estoy comiendo o bebiendo en público."
+  },
+  {
+    "id": "q_074",
+    "dimension": "HOS",
+    "text": "Meterme muy seguido en discusiones.",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 74
+  },
+  {
+    "id": "q_075",
+    "text": "Ponerme nervioso/a cuando estoy solo/a.",
+    "system": "scl_90_r",
+    "order": 75,
+    "dimension": "FOB",
+    "direction": "direct"
+  },
+  {
+    "id": "q_076",
+    "direction": "direct",
+    "dimension": "PAR",
+    "order": 76,
+    "text": "Sentir que los demás no me valoran como merezco.",
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_077",
+    "order": 77,
+    "system": "scl_90_r",
+    "text": "Sentirme solo/a aún estando con gente.",
+    "direction": "direct",
+    "dimension": "PSIC"
+  },
+  {
+    "id": "q_078",
+    "dimension": "ANS",
+    "order": 78,
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Estar inquieto/a; no poder estar sentado/a sin moverme."
+  },
+  {
+    "id": "q_079",
+    "text": "Sentirme un/a inútil.",
+    "dimension": "DEP",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "order": 79
+  },
+  {
+    "id": "q_080",
+    "system": "scl_90_r",
+    "order": 80,
+    "dimension": "ANS",
+    "direction": "direct",
+    "text": "Sentir que algo malo me va a pasar."
+  },
+  {
+    "id": "q_081",
+    "order": 81,
+    "direction": "direct",
+    "text": "Gritar o tirar cosas.",
+    "system": "scl_90_r",
+    "dimension": "HOS"
+  },
+  {
+    "id": "q_082",
+    "text": "Miedo a desmayarme en medio de la gente.",
+    "direction": "direct",
+    "system": "scl_90_r",
+    "dimension": "FOB",
+    "order": 82
+  },
+  {
+    "id": "q_083",
+    "order": 83,
+    "system": "scl_90_r",
+    "dimension": "PAR",
+    "text": "Sentir que se aprovechan de mí si los dejo.",
+    "direction": "direct"
+  },
+  {
+    "id": "q_084",
+    "text": "Pensar cosas sobre el sexo que me molestan.",
+    "direction": "direct",
+    "dimension": "PSIC",
+    "order": 84,
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_085",
+    "direction": "direct",
+    "dimension": "PSIC",
+    "system": "scl_90_r",
+    "text": "Sentir que debo ser castigado/a por mis pecados.",
+    "order": 85
+  },
+  {
+    "id": "q_086",
+    "system": "scl_90_r",
+    "order": 86,
+    "direction": "direct",
+    "dimension": "ANS",
+    "text": "Tener imágenes y pensamientos que me dan miedo."
+  },
+  {
+    "id": "q_087",
+    "text": "Sentir que algo anda mal en mi cuerpo.",
+    "direction": "direct",
+    "order": 87,
+    "dimension": "PSIC",
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_088",
+    "dimension": "PSIC",
+    "order": 88,
+    "direction": "direct",
+    "system": "scl_90_r",
+    "text": "Sentirme alejado/a de las demás personas."
+  },
+  {
+    "id": "q_089",
+    "order": 89,
+    "text": "Sentirme culpable.",
+    "direction": "direct",
+    "dimension": "ADDITIONAL",
+    "system": "scl_90_r"
+  },
+  {
+    "id": "q_090",
+    "system": "scl_90_r",
+    "order": 90,
+    "text": "Pensar que en mi cabeza hay algo que no funciona bien.",
+    "direction": "direct",
+    "dimension": "PSIC"
+  }
+]

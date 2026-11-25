@@ -1,0 +1,202 @@
+[
+  {
+    "id": "q_001",
+    "direction": "direct",
+    "order": 1,
+    "trait": "psicopatia",
+    "system": "dark_triad",
+    "text": "Tengo estados de ánimo en los que actúo por capricho, pensando poco en las consecuencias o el riesgo."
+  },
+  {
+    "id": "q_002",
+    "system": "dark_triad",
+    "direction": "inverse",
+    "text": "Nunca he tenido problemas con la ley.",
+    "trait": "psicopatia",
+    "order": 2
+  },
+  {
+    "id": "q_003",
+    "direction": "direct",
+    "text": "Espero favores especiales de los demás.",
+    "system": "dark_triad",
+    "order": 3,
+    "trait": "narcisismo"
+  },
+  {
+    "id": "q_004",
+    "direction": "direct",
+    "order": 4,
+    "trait": "psicopatia",
+    "text": "Pierdo los estribos fácilmente.",
+    "system": "dark_triad"
+  },
+  {
+    "id": "q_005",
+    "text": "Soy mejor que los demás.",
+    "order": 5,
+    "trait": "narcisismo",
+    "direction": "direct",
+    "system": "dark_triad"
+  },
+  {
+    "id": "q_006",
+    "trait": "psicopatia",
+    "order": 6,
+    "system": "dark_triad",
+    "text": "Preocuparte por la moralidad de tus acciones es para los perdedores.",
+    "direction": "direct"
+  },
+  {
+    "id": "q_007",
+    "order": 7,
+    "trait": "narcisismo",
+    "direction": "direct",
+    "text": "Quiero que los demás me admiren.",
+    "system": "dark_triad"
+  },
+  {
+    "id": "q_008",
+    "trait": "narcisismo",
+    "order": 8,
+    "system": "dark_triad",
+    "text": "Siento que soy más especial que los demás.",
+    "direction": "direct"
+  },
+  {
+    "id": "q_009",
+    "trait": "psicopatia",
+    "order": 9,
+    "direction": "direct",
+    "system": "dark_triad",
+    "text": "Desprecio a las personas que no pueden controlar sus emociones."
+  },
+  {
+    "id": "q_010",
+    "trait": "maquiavelismo",
+    "order": 10,
+    "system": "dark_triad",
+    "text": "Ser ético es más importante que salir adelante en el mundo.",
+    "direction": "inverse"
+  },
+  {
+    "id": "q_011",
+    "direction": "direct",
+    "text": "Me frustro fácilmente.",
+    "system": "dark_triad",
+    "order": 11,
+    "trait": "psicopatia"
+  },
+  {
+    "id": "q_012",
+    "direction": "direct",
+    "system": "dark_triad",
+    "text": "Evito los conflictos directos con personas que pueden ser útiles para mí en el futuro.",
+    "trait": "maquiavelismo",
+    "order": 12
+  },
+  {
+    "id": "q_013",
+    "direction": "direct",
+    "system": "dark_triad",
+    "order": 13,
+    "trait": "maquiavelismo",
+    "text": "Confundo a las personas para tener una mejor imagen ante ellas."
+  },
+  {
+    "id": "q_014",
+    "text": "Tengo fantasías sobre un estatus o prestigio extraordinario.",
+    "system": "dark_triad",
+    "direction": "direct",
+    "order": 14,
+    "trait": "narcisismo"
+  },
+  {
+    "id": "q_015",
+    "trait": "maquiavelismo",
+    "order": 15,
+    "system": "dark_triad",
+    "text": "Desprecio a las personas que insensatamente comparten sus secretos.",
+    "direction": "direct"
+  },
+  {
+    "id": "q_016",
+    "trait": "narcisismo",
+    "order": 16,
+    "text": "Domino las situaciones sociales.",
+    "system": "dark_triad",
+    "direction": "direct"
+  },
+  {
+    "id": "q_017",
+    "system": "dark_triad",
+    "text": "La mayoría de las personas son perezosas y no se esfuerzan a menos que tengan que hacerlo.",
+    "direction": "direct",
+    "order": 17,
+    "trait": "maquiavelismo"
+  },
+  {
+    "id": "q_018",
+    "direction": "direct",
+    "order": 18,
+    "trait": "maquiavelismo",
+    "text": "Llevo un registro de información sensible que podré utilizar para hacer daño a las personas en un futuro.",
+    "system": "dark_triad"
+  },
+  {
+    "id": "q_019",
+    "direction": "inverse",
+    "order": 19,
+    "trait": "psicopatia",
+    "system": "dark_triad",
+    "text": "Todas las personas merecen un respeto básico."
+  },
+  {
+    "id": "q_020",
+    "text": "No me siento tan triste como los demás cuando alguien muere.",
+    "trait": "psicopatia",
+    "order": 20,
+    "system": "dark_triad",
+    "direction": "direct"
+  },
+  {
+    "id": "q_021",
+    "order": 21,
+    "system": "dark_triad",
+    "trait": "psicopatia",
+    "direction": "direct",
+    "text": "Disfruto burlándome de los perdedores."
+  },
+  {
+    "id": "q_022",
+    "text": "Manipulo a los demás para salirme con la mía.",
+    "system": "dark_triad",
+    "direction": "direct",
+    "trait": "maquiavelismo",
+    "order": 22
+  },
+  {
+    "id": "q_023",
+    "text": "Exploto a los demás para cumplir mis propios objetivos.",
+    "trait": "maquiavelismo",
+    "order": 23,
+    "system": "dark_triad",
+    "direction": "direct"
+  },
+  {
+    "id": "q_024",
+    "order": 24,
+    "trait": "narcisismo",
+    "text": "Me motiva especialmente hacer amistad con personas famosas.",
+    "direction": "direct",
+    "system": "dark_triad"
+  },
+  {
+    "id": "q_025",
+    "system": "dark_triad",
+    "order": 25,
+    "trait": "psicopatia",
+    "text": "Tengo buenas relaciones con mi familia.",
+    "direction": "inverse"
+  }
+]

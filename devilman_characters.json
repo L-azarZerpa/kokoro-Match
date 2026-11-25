@@ -1,0 +1,419 @@
+[
+  {
+    "id": "ryo_asuka",
+    "name": "Ryo Asuka",
+    "mbti": "ENTJ",
+    "enneagram": "8w9",
+    "archetype": "El Desafiante / El Líder",
+    "fear": "ser dañado o controlado por otros",
+    "desire": "ser autosuficiente y tener el control de su propia vida",
+    "about": "Ryo Asuka (飛鳥 了, Asuka Ryō/Ryou) es un personaje de Devilman y un buen amigo de Akira Fudo. Es quien está detrás de los eventos que ocurren en Devilman y tiene cabello rubio y ojos azules, destacando su origen mestizo.",
+    "profile": {
+      "ocean": {
+        "extraversion": 0.5,
+        "neuroticism": 0.25,
+        "agreeableness": 0.75,
+        "conscientiousness": 0.1,
+        "openness": 0.75
+      },
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "akira_fudo",
+    "name": "Akira Fudo",
+    "mbti": "ISFP",
+    "enneagram": "9w8",
+    "archetype": "El Pacificador / El Mediador",
+    "fear": "no tener paz interior ni armonía",
+    "desire": "estar en paz consigo mismo y con los demás",
+    "about": null,
+    "profile": {
+      "ocean": {
+        "extraversion": 0.25,
+        "neuroticism": 0.75,
+        "agreeableness": 0.5,
+        "conscientiousness": 0.75,
+        "openness": 0.75
+      },
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "silene",
+    "name": "Silene",
+    "mbti": "ESTP",
+    "enneagram": "8w7",
+    "archetype": "El Desafiante / El Líder",
+    "fear": "ser dañado o controlado por otros",
+    "desire": "ser autosuficiente y tener el control de su propia vida",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "miki_makimura",
+    "name": "Miki Makimura",
+    "mbti": "ESFJ",
+    "enneagram": "2w1",
+    "archetype": "El Ayudador / El Dador",
+    "fear": "no ser querido ni deseado",
+    "desire": "sentirse amado y apreciado",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "miko_kuroda",
+    "name": "Miko Kuroda",
+    "mbti": "ISTJ",
+    "enneagram": "9w1",
+    "archetype": "El Pacificador / El Mediador",
+    "fear": "no tener paz interior ni armonía",
+    "desire": "estar en paz consigo mismo y con los demás",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "god",
+    "name": "God",
+    "mbti": "INTP",
+    "enneagram": "8w9",
+    "archetype": "El Desafiante / El Líder",
+    "fear": "ser dañado o controlado por otros",
+    "desire": "ser autosuficiente y tener el control de su propia vida",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "psycho_jenny",
+    "name": "Psycho Jenny",
+    "mbti": "INTP",
+    "enneagram": "5w6",
+    "archetype": "El Investigador / El Observador",
+    "fear": "ser indefenso, incompetente o dependiente de otros",
+    "desire": "ser capaz y competente",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "taro_makimura",
+    "name": "Taro Makimura",
+    "mbti": "ENTP",
+    "enneagram": "6w7",
+    "archetype": "El Leal / El Escéptico",
+    "fear": "quedarse sin apoyo ni guía",
+    "desire": "tener seguridad interior y respaldo",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "hie",
+    "name": "Hie",
+    "mbti": "INTP",
+    "enneagram": "5w6",
+    "archetype": "El Investigador / El Observador",
+    "fear": "ser indefenso, incompetente o dependiente de otros",
+    "desire": "ser capaz y competente",
+    "about": "Hie es un personaje de Devilman Crybaby. Es el beatboxer de un grupo de raperos junto a Wamu, Gabi, Babo y Kukun. Hie es bajo y tiene piel rosada. Su peinado consiste en rastas que le cubren los ojos. Suele vestirse con overol y sudadera con capucha. Mantiene las manos en los bolsillos la mayor parte del tiempo y tiene un tatuaje de una estrella en la clavícula. Es callado y nunca habla. Mantiene muy bien su actitud estoica, reaccionando apenas cuando lo apuntan con un arma. Le gusta rapear con sus amigos, aportando ritmos fluidos para que Wamu y Gabi improvisen.",
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "kukun",
+    "name": "Kukun",
+    "mbti": "ISFP",
+    "enneagram": "4w3",
+    "archetype": "El Individualista / El Romántico",
+    "fear": "no tener una identidad única ni trascendencia",
+    "desire": "encontrarse a sí mismo y ser reconocido por su singularidad",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "gabi",
+    "name": "Gabi",
+    "mbti": "ESTP",
+    "enneagram": "7w8",
+    "archetype": "El Entusiasta / El Aventurero",
+    "fear": "verse privado de algo o atrapado en el dolor",
+    "desire": "ser libre y experimentar alegría y emoción",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "wamu",
+    "name": "Wamu",
+    "mbti": "ESFJ",
+    "enneagram": "3w2",
+    "archetype": "El Triunfador / El Intérprete",
+    "fear": "sentirse inútil o incapaz de tener éxito",
+    "desire": "sentirse valioso y digno",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "koji_nagasaki",
+    "name": "Koji Nagasaki",
+    "mbti": "ENTP",
+    "enneagram": "3w4",
+    "archetype": "El Triunfador / El Intérprete",
+    "fear": "sentirse inútil o incapaz de tener éxito",
+    "desire": "sentirse valioso y digno",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "amon",
+    "name": "Amon",
+    "mbti": "ESTP",
+    "enneagram": "8w7",
+    "archetype": "El Desafiante / El Líder",
+    "fear": "ser dañado o controlado por otros",
+    "desire": "ser autosuficiente y tener el control de su propia vida",
+    "about": "Amon (アモン) fue un personaje secundario apenas visto y mencionado en Devilman Crybaby. Aparece una sola vez en su forma original durante la Sabbath Party. Fue un poderoso guerrero demonio de reputación heroica y antiguo amante de Sirene; Amon poseyó a Akira Fudo durante la Sabbath Party orquestada por Ryo Asuka, transformándolo en el Devilman titular.",
+    "profile": {
+      "ocean": {
+        "extraversion": 0.9,
+        "neuroticism": 0.1,
+        "agreeableness": 0.1,
+        "conscientiousness": 0.1,
+        "openness": 0.5
+      },
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "moyuru_koda",
+    "name": "Moyuru Koda",
+    "mbti": "ISFP",
+    "enneagram": "9w8",
+    "archetype": "El Pacificador / El Mediador",
+    "fear": "no tener paz interior ni armonía",
+    "desire": "estar en paz consigo mismo y con los demás",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "zennon",
+    "name": "Zennon",
+    "mbti": "ESTJ",
+    "enneagram": "8w7",
+    "archetype": "El Desafiante / El Líder",
+    "fear": "ser dañado o controlado por otros",
+    "desire": "ser autosuficiente y tener el control de su propia vida",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "noel_makimura",
+    "name": "Noel Makimura",
+    "mbti": "ESFJ",
+    "enneagram": "2w1",
+    "archetype": "El Ayudador / El Dador",
+    "fear": "no ser querido ni deseado",
+    "desire": "sentirse amado y apreciado",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "babo",
+    "name": "Babo",
+    "mbti": "ESTP",
+    "enneagram": "7w8",
+    "archetype": "El Entusiasta / El Aventurero",
+    "fear": "verse privado de algo o atrapado en el dolor",
+    "desire": "ser libre y experimentar alegría y emoción",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  },
+  {
+    "id": "kaim",
+    "name": "Kaim",
+    "mbti": "ISTJ",
+    "enneagram": "1w2",
+    "archetype": "El Reformador / El Perfeccionista",
+    "fear": "ser corrupto o malvado",
+    "desire": "ser bueno y tener integridad",
+    "about": null,
+    "profile": {
+      "ocean": null,
+      "darkTriad": {
+        "machiavellianism": 0.5,
+        "narcissism": 0.5,
+        "psychopathy": 0.5
+      },
+      "scl90": {
+        "globalSeverity": 0.5
+      }
+    }
+  }
+]

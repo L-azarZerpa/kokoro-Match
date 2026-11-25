@@ -1,9 +1,10 @@
 {
   "name": "dary",
   "version": "1.0.0",
-  "main": "App.js",
+  "main": "App.tsx",
   "dependencies": {
-    "expo": "~58.0.25",
+    "@types/react": "~19.3.0",
+    "expo": "~58.0.26",
     "expo-status-bar": "~58.0.5",
     "firebase": "^13.4.0",
     "nativewind": "4.2.7",
@@ -13,7 +14,8 @@
     "react-native-reanimated": "4.7.1",
     "react-native-safe-area-context": "~5.11.1",
     "react-native-web": "^0.21.4",
-    "react-native-worklets": "0.13.0"
+    "react-native-worklets": "0.13.0",
+    "typescript": "~6.0.3"
   },
   "scripts": {
     "start": "expo start",
@@ -25,6 +27,7 @@
   "private": true,
   "devDependencies": {
     "babel-preset-expo": "^58.0.25",
+    "dotenv": "^18.0.10",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~58.0.4",
     "tailwindcss": "^3.4.19"

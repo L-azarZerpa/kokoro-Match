@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { useMemo, useState } from 'react';
 import { Image, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
-import AccountActions from './AccountActions';
+import AccountActions from '../components/AccountActions';
+import type { ReactNode } from 'react';
+import type { HomeScreenProps, Game } from '../types';
 
 const DESKTOP_NAV = [
   { id: 'home', icon: '⌂', label: 'Inicio', active: true },
@@ -10,7 +12,15 @@ const DESKTOP_NAV = [
   { id: 'saved', icon: '♡', label: 'Guardados' },
 ];
 
-function GameTile({ game, className = '', onPress }) {
+function GameTile({
+  game,
+  className = '',
+  onPress,
+}: {
+  game: Game;
+  className?: string;
+  onPress: () => void;
+}) {
   return (
     <Pressable
       onPress={onPress}
@@ -34,7 +44,7 @@ function GameTile({ game, className = '', onPress }) {
   );
 }
 
-function SectionTitle({ children }) {
+function SectionTitle({ children }: { children: ReactNode }) {
   return <Text className="mb-4 text-xl font-extrabold text-white">{children}</Text>;
 }
 
@@ -51,7 +61,7 @@ export default function HomeScreen({
   onSignIn,
   onSignOut,
   userEmail,
-}) {
+}: HomeScreenProps) {
   const [search, setSearch] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isSidebarHovered, setIsSidebarHovered] = useState(false);
@@ -86,7 +96,7 @@ export default function HomeScreen({
             accessibilityLabel="Icono de Kokoro Match"
             className="mr-1"
             resizeMode="contain"
-            source={require('./assets/icon.png')}
+            source={require('../../assets/icon.png')}
             style={{ height: 16, width: 16 }}
           />
           <View>
@@ -169,7 +179,7 @@ export default function HomeScreen({
                     key={game.id} 
                     game={game} 
                     className="h-[150px] w-[220px]" 
-                    onPress={() => onSelectGame(game)} // <--- Al hacer clic avisa al padre
+                    onPress={() => onSelectGame?.(game)} // <--- Al hacer clic avisa al padre
                   />
                 ))
               ) : query ? (
@@ -194,7 +204,7 @@ export default function HomeScreen({
                   key={game.id} 
                   game={game} 
                   className="h-[130px] w-[190px]" 
-                  onPress={() => onSelectGame(game)} // <--- Igual en destacados
+                  onPress={() => onSelectGame?.(game)} // <--- Igual en destacados
                 />
               ))}
             </ScrollView>

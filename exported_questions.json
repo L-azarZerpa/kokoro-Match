@@ -1,0 +1,902 @@
+[
+  {
+    "id": "O1",
+    "trait": "O",
+    "text": "Tengo una imaginación muy activa.",
+    "system": "big_five",
+    "direction": "direct",
+    "code": "O1",
+    "order": 1
+  },
+  {
+    "id": "O2",
+    "direction": "direct",
+    "system": "big_five",
+    "code": "O2",
+    "order": 2,
+    "text": "Disfruto explorando ideas abstractas y teóricas.",
+    "trait": "O"
+  },
+  {
+    "id": "O3",
+    "direction": "direct",
+    "order": 3,
+    "text": "Me conmuevo con facilidad ante una obra de arte, una pieza musical o un texto literario.",
+    "trait": "O",
+    "system": "big_five",
+    "code": "O3"
+  },
+  {
+    "id": "O4",
+    "code": "O4",
+    "trait": "O",
+    "system": "big_five",
+    "text": "Me gusta probar actividades nuevas y diferentes.",
+    "direction": "direct",
+    "order": 4
+  },
+  {
+    "id": "O5",
+    "direction": "direct",
+    "text": "Disfruto reflexionando sobre el significado profundo de las cosas.",
+    "trait": "O",
+    "system": "big_five",
+    "order": 5,
+    "code": "O5"
+  },
+  {
+    "id": "O6",
+    "text": "Prefiero las rutinas conocidas a las experiencias novedosas.",
+    "trait": "O",
+    "direction": "inverse",
+    "system": "big_five",
+    "order": 6,
+    "code": "O6"
+  },
+  {
+    "id": "O7",
+    "code": "O7",
+    "trait": "O",
+    "system": "big_five",
+    "direction": "inverse",
+    "text": "Las discusiones abstractas me resultan aburridas.",
+    "order": 7
+  },
+  {
+    "id": "O8",
+    "system": "big_five",
+    "order": 8,
+    "text": "Rara vez me detengo a apreciar la belleza de las cosas.",
+    "code": "O8",
+    "trait": "O",
+    "direction": "inverse"
+  },
+  {
+    "id": "O9",
+    "system": "big_five",
+    "order": 9,
+    "code": "O9",
+    "text": "Me siento atraído por ideas poco convencionales.",
+    "trait": "O",
+    "direction": "direct"
+  },
+  {
+    "id": "O10",
+    "text": "Disfruto de películas o libros que me hacen pensar de forma diferente.",
+    "trait": "O",
+    "direction": "direct",
+    "system": "big_five",
+    "order": 10,
+    "code": "O10"
+  },
+  {
+    "id": "O11",
+    "system": "big_five",
+    "direction": "inverse",
+    "code": "O11",
+    "order": 11,
+    "text": "Prefiero mantenerme en lo que ya conozco antes que explorar lo desconocido.",
+    "trait": "O"
+  },
+  {
+    "id": "O12",
+    "direction": "direct",
+    "order": 12,
+    "code": "O12",
+    "text": "Me interesa aprender sobre temas muy diversos, aunque no tengan aplicación práctica inmediata.",
+    "system": "big_five",
+    "trait": "O"
+  },
+  {
+    "id": "C1",
+    "code": "C1",
+    "order": 13,
+    "system": "big_five",
+    "trait": "C",
+    "direction": "direct",
+    "text": "Cumplo mis compromisos y promesas."
+  },
+  {
+    "id": "C2",
+    "system": "big_five",
+    "order": 14,
+    "text": "Me gusta tener mis cosas organizadas y en su lugar.",
+    "trait": "C",
+    "code": "C2",
+    "direction": "direct"
+  },
+  {
+    "id": "C3",
+    "direction": "direct",
+    "code": "C3",
+    "trait": "C",
+    "text": "Suelo terminar las tareas que empiezo.",
+    "order": 15,
+    "system": "big_five"
+  },
+  {
+    "id": "C4",
+    "code": "C4",
+    "trait": "C",
+    "direction": "direct",
+    "text": "Planifico mis actividades con anticipación.",
+    "order": 16,
+    "system": "big_five"
+  },
+  {
+    "id": "C5",
+    "direction": "direct",
+    "code": "C5",
+    "trait": "C",
+    "system": "big_five",
+    "text": "Soy una persona disciplinada y constante.",
+    "order": 17
+  },
+  {
+    "id": "C6",
+    "text": "A menudo dejo las cosas para el último momento.",
+    "trait": "C",
+    "direction": "inverse",
+    "order": 18,
+    "system": "big_five",
+    "code": "C6"
+  },
+  {
+    "id": "C7",
+    "trait": "C",
+    "text": "Mi habitación o espacio de trabajo suele estar desordenado.",
+    "direction": "inverse",
+    "code": "C7",
+    "order": 19,
+    "system": "big_five"
+  },
+  {
+    "id": "C8",
+    "code": "C8",
+    "trait": "C",
+    "text": "Me cuesta seguir un horario o una rutina establecida.",
+    "direction": "inverse",
+    "order": 20,
+    "system": "big_five"
+  },
+  {
+    "id": "C9",
+    "text": "Suelo posponer decisiones importantes hasta que ya no queda tiempo.",
+    "trait": "C",
+    "system": "big_five",
+    "order": 21,
+    "direction": "inverse",
+    "code": "C9"
+  },
+  {
+    "id": "C10",
+    "direction": "direct",
+    "order": 22,
+    "code": "C10",
+    "text": "Reviso mi trabajo para asegurarme de que esté bien hecho.",
+    "system": "big_five",
+    "trait": "C"
+  },
+  {
+    "id": "C11",
+    "text": "Me distraigo con facilidad cuando una tarea me resulta tediosa.",
+    "trait": "C",
+    "system": "big_five",
+    "order": 23,
+    "direction": "inverse",
+    "code": "C11"
+  },
+  {
+    "id": "C12",
+    "code": "C12",
+    "direction": "direct",
+    "order": 24,
+    "system": "big_five",
+    "trait": "C",
+    "text": "Cuando asumo una responsabilidad, la llevo hasta el final."
+  },
+  {
+    "id": "E1",
+    "trait": "E",
+    "direction": "direct",
+    "code": "E1",
+    "system": "big_five",
+    "text": "Me siento lleno de energía cuando estoy rodeado de otras personas.",
+    "order": 25
+  },
+  {
+    "id": "E2",
+    "order": 26,
+    "text": "Suelo iniciar conversaciones con facilidad en reuniones sociales.",
+    "trait": "E",
+    "direction": "direct",
+    "system": "big_five",
+    "code": "E2"
+  },
+  {
+    "id": "E3",
+    "text": "Disfruto siendo el centro de atención en un grupo.",
+    "trait": "E",
+    "system": "big_five",
+    "order": 27,
+    "code": "E3",
+    "direction": "direct"
+  },
+  {
+    "id": "E4",
+    "direction": "direct",
+    "order": 28,
+    "text": "Me resulta fácil expresar mis ideas y opiniones en voz alta.",
+    "code": "E4",
+    "system": "big_five",
+    "trait": "E"
+  },
+  {
+    "id": "E5",
+    "direction": "direct",
+    "code": "E5",
+    "trait": "E",
+    "system": "big_five",
+    "text": "Disfruto las actividades grupales y las reuniones sociales.",
+    "order": 29
+  },
+  {
+    "id": "E6",
+    "order": 30,
+    "code": "E6",
+    "direction": "direct",
+    "text": "Suelo ser el primero en hablar con personas desconocidas en un evento social.",
+    "system": "big_five",
+    "trait": "E"
+  },
+  {
+    "id": "E7",
+    "code": "E7",
+    "trait": "E",
+    "system": "big_five",
+    "order": 31,
+    "text": "Me siento agotado después de pasar mucho tiempo socializando.",
+    "direction": "inverse"
+  },
+  {
+    "id": "E8",
+    "direction": "inverse",
+    "text": "Prefiero escuchar antes que hablar en la mayoría de las situaciones.",
+    "order": 32,
+    "system": "big_five",
+    "trait": "E",
+    "code": "E8"
+  },
+  {
+    "id": "E9",
+    "system": "big_five",
+    "code": "E9",
+    "order": 33,
+    "text": "Evito las fiestas o eventos con demasiada gente.",
+    "direction": "inverse",
+    "trait": "E"
+  },
+  {
+    "id": "E10",
+    "system": "big_five",
+    "direction": "inverse",
+    "order": 34,
+    "code": "E10",
+    "text": "Me cuesta romper el hielo con personas que acabo de conocer.",
+    "trait": "E"
+  },
+  {
+    "id": "E11",
+    "text": "Disfruto más de las actividades tranquilas y en solitario.",
+    "trait": "E",
+    "direction": "inverse",
+    "order": 35,
+    "system": "big_five",
+    "code": "E11"
+  },
+  {
+    "id": "E12",
+    "system": "big_five",
+    "order": 36,
+    "direction": "inverse",
+    "code": "E12",
+    "text": "Suelo mantenerme en un segundo plano dentro de los grupos.",
+    "trait": "E"
+  },
+  {
+    "id": "A1",
+    "direction": "direct",
+    "system": "big_five",
+    "code": "A1",
+    "order": 37,
+    "text": "Me preocupo genuinamente por el bienestar de los demás.",
+    "trait": "A"
+  },
+  {
+    "id": "A2",
+    "trait": "A",
+    "text": "Suelo confiar en las buenas intenciones de las personas.",
+    "order": 38,
+    "code": "A2",
+    "system": "big_five",
+    "direction": "direct"
+  },
+  {
+    "id": "A3",
+    "direction": "direct",
+    "code": "A3",
+    "order": 39,
+    "system": "big_five",
+    "text": "Me esfuerzo por tratar a todos con empatía y respeto.",
+    "trait": "A"
+  },
+  {
+    "id": "A4",
+    "trait": "A",
+    "text": "Disfruto ayudando a otros incluso cuando no obtengo nada a cambio.",
+    "code": "A4",
+    "order": 40,
+    "system": "big_five",
+    "direction": "direct"
+  },
+  {
+    "id": "A5",
+    "trait": "A",
+    "direction": "direct",
+    "system": "big_five",
+    "text": "Busco evitar conflictos innecesarios y mantener la armonía.",
+    "code": "A5",
+    "order": 41
+  },
+  {
+    "id": "A6",
+    "code": "A6",
+    "trait": "A",
+    "direction": "direct",
+    "text": "Perdono con relativa facilidad cuando alguien comete un error conmigo.",
+    "system": "big_five",
+    "order": 42
+  },
+  {
+    "id": "A7",
+    "code": "A7",
+    "system": "big_five",
+    "trait": "A",
+    "text": "A veces puedo ser bastante frío o indiferente ante los problemas ajenos.",
+    "order": 43,
+    "direction": "inverse"
+  },
+  {
+    "id": "A8",
+    "direction": "inverse",
+    "code": "A8",
+    "order": 44,
+    "system": "big_five",
+    "text": "Suelo desconfiar de las motivaciones ocultas de la gente.",
+    "trait": "A"
+  },
+  {
+    "id": "A9",
+    "direction": "inverse",
+    "trait": "A",
+    "code": "A9",
+    "text": "Me cuesta ceder en una discusión aunque la otra persona tenga parte de razón.",
+    "order": 45,
+    "system": "big_five"
+  },
+  {
+    "id": "A10",
+    "system": "big_five",
+    "order": 46,
+    "code": "A10",
+    "text": "Me cuesta ponerme en el lugar de personas que piensan muy distinto a mí.",
+    "direction": "inverse",
+    "trait": "A"
+  },
+  {
+    "id": "A11",
+    "code": "A11",
+    "direction": "inverse",
+    "trait": "A",
+    "text": "Antepondría mis propios intereses antes que ceder por el bien del grupo.",
+    "order": 47,
+    "system": "big_five"
+  },
+  {
+    "id": "A12",
+    "trait": "A",
+    "direction": "inverse",
+    "system": "big_five",
+    "text": "Suelo señalar los defectos de los demás sin mucho tacto.",
+    "code": "A12",
+    "order": 48
+  },
+  {
+    "id": "N1",
+    "system": "big_five",
+    "order": 49,
+    "code": "N1",
+    "text": "Me preocupo con facilidad por cosas que podrían salir mal.",
+    "direction": "direct",
+    "trait": "N"
+  },
+  {
+    "id": "N2",
+    "trait": "N",
+    "code": "N2",
+    "text": "Suelo sentirme estresado o abrumado ante situaciones de presión.",
+    "order": 50,
+    "direction": "direct",
+    "system": "big_five"
+  },
+  {
+    "id": "N3",
+    "order": 51,
+    "text": "Mi estado de ánimo puede cambiar con relativa rapidez.",
+    "direction": "direct",
+    "system": "big_five",
+    "trait": "N",
+    "code": "N3"
+  },
+  {
+    "id": "N4",
+    "trait": "N",
+    "direction": "direct",
+    "system": "big_five",
+    "text": "A menudo me quedo dándole vueltas a errores o problemas pasados.",
+    "code": "N4",
+    "order": 52
+  },
+  {
+    "id": "N5",
+    "trait": "N",
+    "text": "Me irrito o me frustro con facilidad cuando las cosas no salen como esperaba.",
+    "code": "N5",
+    "direction": "direct",
+    "order": 53,
+    "system": "big_five"
+  },
+  {
+    "id": "N6",
+    "trait": "N",
+    "text": "Siento ansiedad o nerviosismo con frecuencia en mi día a día.",
+    "code": "N6",
+    "order": 54,
+    "system": "big_five",
+    "direction": "direct"
+  },
+  {
+    "id": "N7",
+    "system": "big_five",
+    "order": 55,
+    "direction": "inverse",
+    "code": "N7",
+    "text": "Mantengo la calma incluso en medio de crisis o situaciones difíciles.",
+    "trait": "N"
+  },
+  {
+    "id": "N8",
+    "order": 56,
+    "text": "Rara vez me siento decaído o con el ánimo bajo.",
+    "system": "big_five",
+    "trait": "N",
+    "code": "N8",
+    "direction": "inverse"
+  },
+  {
+    "id": "N9",
+    "direction": "inverse",
+    "code": "N9",
+    "trait": "N",
+    "text": "Me recupero rápidamente después de vivir una situación estresante.",
+    "order": 57,
+    "system": "big_five"
+  },
+  {
+    "id": "N10",
+    "trait": "N",
+    "direction": "inverse",
+    "text": "Suelo sentirme seguro y emocionalmente estable la mayor parte del tiempo.",
+    "code": "N10",
+    "order": 58,
+    "system": "big_five"
+  },
+  {
+    "id": "N11",
+    "trait": "N",
+    "system": "big_five",
+    "direction": "inverse",
+    "text": "Las críticas o comentarios negativos me afectan poco.",
+    "code": "N11",
+    "order": 59
+  },
+  {
+    "id": "N12",
+    "direction": "inverse",
+    "code": "N12",
+    "trait": "N",
+    "text": "Manejo mis emociones con serenidad sin perder el control.",
+    "order": 60,
+    "system": "big_five"
+  },
+  {
+    "id": "EI1",
+    "order": 61,
+    "pole": "E",
+    "code": "EI1",
+    "text": "Recargo mi energía interactuando y conversando con otras personas.",
+    "dimension": "EI",
+    "system": "mbti"
+  },
+  {
+    "id": "EI2",
+    "text": "Pienso con mayor claridad cuando hablo mis ideas en voz alta con alguien.",
+    "dimension": "EI",
+    "system": "mbti",
+    "order": 62,
+    "code": "EI2",
+    "pole": "E"
+  },
+  {
+    "id": "EI3",
+    "order": 63,
+    "code": "EI3",
+    "pole": "E",
+    "dimension": "EI",
+    "text": "Me siento cómodo en ambientes dinámicos con mucha interacción social.",
+    "system": "mbti"
+  },
+  {
+    "id": "EI4",
+    "text": "Suelo ampliar mi círculo social con facilidad y frecuencia.",
+    "order": 64,
+    "dimension": "EI",
+    "system": "mbti",
+    "code": "EI4",
+    "pole": "E"
+  },
+  {
+    "id": "EI5",
+    "system": "mbti",
+    "order": 65,
+    "code": "EI5",
+    "pole": "E",
+    "dimension": "EI",
+    "text": "Disfruto iniciar conversaciones con personas que no conozco."
+  },
+  {
+    "id": "EI6",
+    "system": "mbti",
+    "text": "Necesito tiempo a solas para recuperar energía después de mucha actividad social.",
+    "code": "EI6",
+    "pole": "I",
+    "dimension": "EI",
+    "order": 66
+  },
+  {
+    "id": "EI7",
+    "order": 67,
+    "code": "EI7",
+    "pole": "I",
+    "dimension": "EI",
+    "text": "Prefiero procesar mis ideas internamente antes de compartirlas con los demás.",
+    "system": "mbti"
+  },
+  {
+    "id": "EI8",
+    "code": "EI8",
+    "pole": "I",
+    "dimension": "EI",
+    "system": "mbti",
+    "text": "Disfruto más de conversaciones profundas con una o dos personas que de grupos grandes.",
+    "order": 68
+  },
+  {
+    "id": "EI9",
+    "text": "Me siento cómodo pasando largos periodos concentrado en mi mundo interior.",
+    "system": "mbti",
+    "dimension": "EI",
+    "order": 69,
+    "code": "EI9",
+    "pole": "I"
+  },
+  {
+    "id": "EI10",
+    "system": "mbti",
+    "text": "Suelo observar y analizar una situación antes de intervenir activamente.",
+    "order": 70,
+    "dimension": "EI",
+    "code": "EI10",
+    "pole": "I"
+  },
+  {
+    "id": "SN1",
+    "system": "mbti",
+    "code": "SN1",
+    "pole": "S",
+    "text": "Confío más en los hechos concretos y comprobables que en las corazonadas.",
+    "order": 71,
+    "dimension": "SN"
+  },
+  {
+    "id": "SN2",
+    "system": "mbti",
+    "order": 72,
+    "code": "SN2",
+    "pole": "S",
+    "text": "Presto mucha atención a los detalles prácticos y específicos del presente.",
+    "dimension": "SN"
+  },
+  {
+    "id": "SN3",
+    "dimension": "SN",
+    "text": "Prefiero instrucciones claras y paso a paso antes que conceptos generales.",
+    "system": "mbti",
+    "order": 73,
+    "code": "SN3",
+    "pole": "S"
+  },
+  {
+    "id": "SN4",
+    "order": 74,
+    "text": "Valoro más la experiencia práctica que las teorías nuevas.",
+    "dimension": "SN",
+    "system": "mbti",
+    "code": "SN4",
+    "pole": "S"
+  },
+  {
+    "id": "SN5",
+    "code": "SN5",
+    "pole": "S",
+    "system": "mbti",
+    "dimension": "SN",
+    "order": 75,
+    "text": "Me resulta fácil notar cambios físicos o detalles concretos en mi entorno."
+  },
+  {
+    "id": "SN6",
+    "order": 76,
+    "text": "Me atraen más las posibilidades futuras y lo que podría llegar a ser que lo actual.",
+    "dimension": "SN",
+    "system": "mbti",
+    "code": "SN6",
+    "pole": "N"
+  },
+  {
+    "id": "SN7",
+    "code": "SN7",
+    "pole": "N",
+    "dimension": "SN",
+    "order": 77,
+    "system": "mbti",
+    "text": "Suelo buscar patrones ocultos, conexiones simbólicas o significados detrás de los hechos."
+  },
+  {
+    "id": "SN8",
+    "dimension": "SN",
+    "text": "Disfruto imaginando escenarios hipotéticos y soluciones innovadoras.",
+    "code": "SN8",
+    "pole": "N",
+    "order": 78,
+    "system": "mbti"
+  },
+  {
+    "id": "SN9",
+    "text": "Prefiero entender el panorama general antes que detenerme en los detalles.",
+    "dimension": "SN",
+    "order": 79,
+    "system": "mbti",
+    "code": "SN9",
+    "pole": "N"
+  },
+  {
+    "id": "SN10",
+    "system": "mbti",
+    "code": "SN10",
+    "pole": "N",
+    "order": 80,
+    "dimension": "SN",
+    "text": "A menudo tengo ideas repentinas o intuiciones sin necesidad de analizar paso a paso."
+  },
+  {
+    "id": "TF1",
+    "text": "Tomo decisiones basándome principalmente en la lógica y el análisis objetivo.",
+    "code": "TF1",
+    "pole": "T",
+    "order": 81,
+    "system": "mbti",
+    "dimension": "TF"
+  },
+  {
+    "id": "TF2",
+    "pole": "T",
+    "code": "TF2",
+    "dimension": "TF",
+    "order": 82,
+    "system": "mbti",
+    "text": "Valoro más la verdad y la justicia imparcial que evitar herir susceptibilidades."
+  },
+  {
+    "id": "TF3",
+    "order": 83,
+    "code": "TF3",
+    "pole": "T",
+    "text": "Cuando alguien tiene un problema, mi primer impulso es buscar una solución práctica.",
+    "system": "mbti",
+    "dimension": "TF"
+  },
+  {
+    "id": "TF4",
+    "code": "TF4",
+    "pole": "T",
+    "system": "mbti",
+    "dimension": "TF",
+    "order": 84,
+    "text": "Procuro mantenerme objetivo y dejar las emociones fuera al evaluar un argumento."
+  },
+  {
+    "id": "TF5",
+    "system": "mbti",
+    "order": 85,
+    "code": "TF5",
+    "pole": "T",
+    "text": "Considero que las reglas deben aplicarse por igual sin excepciones personales.",
+    "dimension": "TF"
+  },
+  {
+    "id": "TF6",
+    "order": 86,
+    "code": "TF6",
+    "pole": "F",
+    "dimension": "TF",
+    "text": "Al tomar una decisión, considero primero cómo afectará emocionalmente a las personas.",
+    "system": "mbti"
+  },
+  {
+    "id": "TF7",
+    "system": "mbti",
+    "code": "TF7",
+    "pole": "F",
+    "order": 87,
+    "dimension": "TF",
+    "text": "Valoro más la armonía interpersonal y la empatía que ganar una discusión lógica."
+  },
+  {
+    "id": "TF8",
+    "system": "mbti",
+    "code": "TF8",
+    "pole": "F",
+    "order": 88,
+    "text": "Cuando alguien me cuenta un problema, priorizo escucharlo y brindarle apoyo emocional.",
+    "dimension": "TF"
+  },
+  {
+    "id": "TF9",
+    "code": "TF9",
+    "pole": "F",
+    "order": 89,
+    "dimension": "TF",
+    "system": "mbti",
+    "text": "Mis decisiones suelen guiarse por mis valores personales y lo que siento correcto."
+  },
+  {
+    "id": "TF10",
+    "system": "mbti",
+    "pole": "F",
+    "code": "TF10",
+    "order": 90,
+    "dimension": "TF",
+    "text": "Me esfuerzo por adaptar mi trato a las necesidades emocionales de cada persona."
+  },
+  {
+    "id": "JP1",
+    "dimension": "JP",
+    "text": "Me siento más tranquilo cuando tengo las cosas decididas, cerradas y bajo control.",
+    "code": "JP1",
+    "pole": "J",
+    "order": 91,
+    "system": "mbti"
+  },
+  {
+    "id": "JP2",
+    "pole": "J",
+    "code": "JP2",
+    "order": 92,
+    "dimension": "JP",
+    "system": "mbti",
+    "text": "Prefiero trabajar con plazos claros, listas y una estructura definida."
+  },
+  {
+    "id": "JP3",
+    "order": 93,
+    "system": "mbti",
+    "text": "Me gusta terminar mis pendientes antes de dedicarme al descanso o al ocio.",
+    "dimension": "JP",
+    "code": "JP3",
+    "pole": "J"
+  },
+  {
+    "id": "JP4",
+    "system": "mbti",
+    "order": 94,
+    "text": "Los cambios imprevistos de planes suelen generarme incomodidad.",
+    "code": "JP4",
+    "pole": "J",
+    "dimension": "JP"
+  },
+  {
+    "id": "JP5",
+    "text": "Prefiero planificar mis viajes o proyectos con bastante antelación.",
+    "code": "JP5",
+    "pole": "J",
+    "dimension": "JP",
+    "order": 95,
+    "system": "mbti"
+  },
+  {
+    "id": "JP6",
+    "text": "Me siento más cómodo manteniendo mis opciones abiertas el mayor tiempo posible.",
+    "order": 96,
+    "system": "mbti",
+    "dimension": "JP",
+    "code": "JP6",
+    "pole": "P"
+  },
+  {
+    "id": "JP7",
+    "dimension": "JP",
+    "text": "Rindo mejor cuando tengo la presión de una fecha límite cercana.",
+    "order": 97,
+    "system": "mbti",
+    "code": "JP7",
+    "pole": "P"
+  },
+  {
+    "id": "JP8",
+    "order": 98,
+    "system": "mbti",
+    "text": "Disfruto improvisando y adaptándome sobre la marcha cuando surgen imprevistos.",
+    "dimension": "JP",
+    "code": "JP8",
+    "pole": "P"
+  },
+  {
+    "id": "JP9",
+    "text": "A menudo empiezo varios proyectos o actividades por curiosidad.",
+    "system": "mbti",
+    "order": 99,
+    "code": "JP9",
+    "pole": "P",
+    "dimension": "JP"
+  },
+  {
+    "id": "JP10",
+    "code": "JP10",
+    "pole": "P",
+    "system": "mbti",
+    "order": 100,
+    "dimension": "JP",
+    "text": "Prefiero la flexibilidad en mis horarios antes que seguir una agenda estricta."
+  }
+]

@@ -1,3 +1,4 @@
+import { FirebaseError } from 'firebase/app';
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { Pressable, Text, TextInput, View } from 'react-native';
@@ -8,15 +9,21 @@ import {
   updateProfile,
 } from 'firebase/auth';
 import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
-import { auth, db } from './firebase';
+import { auth, db } from '../services/firebase';
+import type { AuthMode } from '../types';
 
-export default function AuthScreen({ initialMode = 'login', onBack }) {
+interface AuthScreenProps {
+  initialMode?: AuthMode;
+  onBack?: () => void;
+}
+
+export default function AuthScreen({ initialMode = 'login', onBack }: AuthScreenProps) {
   const [isRegisterMode, setIsRegisterMode] = useState(initialMode === 'register');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState(null);
-  const [infoMessage, setInfoMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [infoMessage, setInfoMessage] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handlePasswordReset = async () => {
@@ -34,10 +41,12 @@ export default function AuthScreen({ initialMode = 'login', onBack }) {
       await sendPasswordResetEmail(auth, cleanEmail);
       setInfoMessage('Te enviamos un correo para restablecer tu contraseña. Revisa tu bandeja o spam.');
     } catch (error) {
-      if (error.code === 'auth/invalid-email') {
-        setErrorMessage('El formato del correo electrónico no es válido.');
-      } else {
-        setErrorMessage('No se pudo enviar el correo de recuperación. Intenta de nuevo.');
+      if (error instanceof FirebaseError) {
+        if (error.code === 'auth/invalid-email') {
+          setErrorMessage('El formato del correo electrónico no es válido.');
+        } else {
+          setErrorMessage('No se pudo enviar el correo de recuperación. Intenta de nuevo.');
+        }
       }
     } finally {
       setIsSubmitting(false);
@@ -73,11 +82,12 @@ export default function AuthScreen({ initialMode = 'login', onBack }) {
 
       if (onBack) onBack();
     } catch (error) {
-      if (error.code === 'auth/email-already-in-use') {
+      const code = error instanceof FirebaseError ? error.code : null;
+      if (code === 'auth/email-already-in-use') {
         setErrorMessage('Ese correo ya está registrado.');
-      } else if (error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password') {
+      } else if (code === 'auth/invalid-credential' || code === 'auth/wrong-password') {
         setErrorMessage('Correo o contraseña incorrectos.');
-      } else if (error.code === 'auth/weak-password') {
+      } else if (code === 'auth/weak-password') {
         setErrorMessage('La contraseña debe tener al menos 6 caracteres.');
       } else {
         setErrorMessage('No se pudo completar la operación. Verifica tus datos.');

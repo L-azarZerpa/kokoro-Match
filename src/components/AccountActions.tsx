@@ -1,4 +1,5 @@
 import { Pressable, Text, View } from 'react-native';
+import type { AccountActionsProps } from '../types';
 
 export default function AccountActions({
   isAuthenticated = false,
@@ -7,7 +8,7 @@ export default function AccountActions({
   onSignIn,
   onSignOut,
   userEmail,
-}) {
+}: AccountActionsProps) {
   return (
     <View className="flex-row items-center">
       {isAuthenticated ? (
